@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     Calculadora do Amor 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+
+  <div id="container">
+
+    <p>Calcule seu Amor:</p>
+
+    <br>
+    <br>
+
+      <p> Digite o primeiro nome : </p>
+      <input type = "text" [(ngModel)]="nome1">
+  
+      <p> Digite o segundo nome: </p>
+      <input type = "text" [(ngModel)]="nome2">
+
+      <br>
+      <br>
+
+      <ion-button (click)="CalcularAmor()"> Calcular </ion-button>
+
+    <p>{{ resultado }}</p>
+    <p>{{mensagem}}</p>
+
+
+
+
+  </div>
+</ion-content>
